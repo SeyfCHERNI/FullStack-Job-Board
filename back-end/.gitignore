@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example employee template template
+### Example employee template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+/target
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+/src/main/resources/public/bundle.js

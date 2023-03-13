@@ -1,0 +1,79 @@
+@import "/../../styles/_variables";
+
+.no-input{
+  display: none;
+}
+
+
+.simple-form {
+  color: $carbon;
+  width: 100%;
+  background-color: $panelBg;
+  margin: auto;
+  padding: $contentPadding;
+  -webkit-border-radius: 25rem;
+  -moz-border-radius: 25rem;
+  border-radius: 2rem;
+  @include panelBorders();
+
+  .input-container{
+    display: flex;
+      flex-direction: column;
+    .row{
+      flex-direction: row;
+    }
+  }
+  .job-form-group {
+    text-align: left;
+    margin: 0 0 2rem 0;
+
+    label {
+      display: block;
+      margin: 0 0 .5rem 0;
+    }
+    input {
+      width: 100%;
+    }
+
+    &.error {
+      color: $watermelon;
+      label {
+        font-weight: bold;
+      }
+      input {
+        border: 2px solid $watermelon;
+      }
+    }
+
+    .input-error-box {
+      //border: 1px solid $watermelon;
+      width: 60%;
+    }
+
+  }
+
+  .form-error-box {
+    background-color: $watermelon;
+    color: $white;
+    z-index: 444;
+  }
+}
+
+.joined-row{
+  display: flex;
+  //justify-content: space-around;
+  > div{
+    margin: 10px;
+  }
+  .file-input-container{
+    display: flex;
+    align-items: baseline;
+    p{
+      margin: 0 10px;
+    }
+  }
+  .job-form-group{
+    display: inline-block;
+    margin: 10px;
+  }
+}

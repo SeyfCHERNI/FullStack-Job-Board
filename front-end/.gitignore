@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example employee template template
+### Example employee template
+
+# IntelliJ project files
+.env
+.idea
+/art/
+/node_modules/
+out
+/public/uploads/*
+gen
